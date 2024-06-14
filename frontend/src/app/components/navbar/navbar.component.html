@@ -1,0 +1,170 @@
+<div class="user">
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a
+        class="navbar-brand me-auto"
+        routerLink="/page"
+        routerLinkActive="active"
+      >
+        <!-- <i class="fas fa-user-friends me-3"></i> -->
+        <img src="../../../../../assets/logo2.png" alt="" class="logo">
+        <span class=" bandhan ms-2"> Bandhan</span>
+      </a>
+      <div
+        class="offcanvas offcanvas-end"
+        tabindex="-1"
+        id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel"
+      >
+        <div class="offcanvas-header">
+          <h5
+            class="offcanvas-title"
+            id="offcanvasNavbarLabel"
+            style="color: black; font-weight: bold"
+          >
+            <span class="bandhan">Bandhan</span>
+          </h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas" 
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a
+                class="nav-link mx-lg-2"
+                aria-current="page"
+                routerLink="/page"
+                routerLinkActive="active"
+                >Home</a
+              >
+            </li>
+            <li class="dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                routerLinkActive="active"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Matches</a
+              >
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a
+                  class="dropdown-item nav-link"
+                  routerLink="/matches/grooms"
+                  routerLinkActive="active"
+                >
+                  <i class="fas fa-user-tie text fa-sm me-2"></i>Grooms</a
+                >
+                <a
+                  class="dropdown-item nav-link"
+                  routerLink="/matches/brides"
+                  routerLinkActive="active"
+                >
+                  <i class="fas fa-user text fa-sm me-2"></i>Brides</a
+                >
+              </div>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link mx-lg-2"
+                routerLink="/about"
+                routerLinkActive="active"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link mx-lg-2"
+                routerLink="/services"
+                routerLinkActive="active"
+                >Services</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link mx-lg-2"
+                routerLink="/contact"
+                routerLinkActive="active"
+                >Contact</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link mx-lg-2"
+                routerLink="/chats"
+                routerLinkActive="active"
+                >Chats</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Notification icon Bell -->
+      <div>
+        <button
+          type="button"
+          class="btn me-3 position-relative"
+          (click)="toggleNotificationBox()"
+        >
+          <i class="fas fa-bell bell"></i>
+          <span
+            *ngIf="hasNewNotifications"
+            class="position-absolute top-30 start-80 translate-middle p-1 bg-danger border border-light rounded-circle"
+          ></span>
+        </button>
+      </div>
+      
+      <div class="dropdown login-button text-white">
+        <a
+          class="dropdown-toggle profile"
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          <i class="fas fa-user me-2"></i>{{ userName }}
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <!-- <a
+            class="dropdown-item"
+            href="javascript:void(0);"
+            (click)="myProfile()"
+          >
+            <i class="fas fa-user text fa-sm me-2"></i>My Profile</a
+          > -->
+          <a
+            class="dropdown-item"
+            routerLink="/update-profile/update-userInfo"
+            routerLinkActive="active"
+            (click)="updateProfile()"
+          >
+            <i class="fas fa-user-edit text fa-sm me-2"></i>Update Profile</a
+          >
+          <a class="dropdown-item" routerLink="/user/changepassword">
+            <i class="fas fa-lock text fa-sm me-2"></i>Change Password</a
+          >
+          <a class="dropdown-item logout" (click)="logOut()">
+            <i class="fas fa-sign-out text fa-sm me-2"></i>Logout</a
+          >
+        </div>
+      </div>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+  <app-notifications *ngIf="isNotificationBoxVisible"></app-notifications>
+</div>

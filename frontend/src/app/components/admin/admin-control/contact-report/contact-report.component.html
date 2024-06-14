@@ -1,0 +1,31 @@
+<div class="contact">
+  <h3>Contact Report</h3>
+  <hr />
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Message</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let contact of contactData">
+        <td>{{ contact.name }}</td>
+        <td>{{ contact.email }}</td>
+        <td>{{ contact.message }}</td>
+
+        <td>
+
+          <!-- <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to={{ contact.email }}" target="_blank" >
+            <button type="button" class="btn btn-danger">Reply</button>
+          </a> -->
+
+          <button type="button" class="btn btn-danger" (click)="handleAction(contact)">Reply</button>
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

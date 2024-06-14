@@ -1,0 +1,266 @@
+.navbar {
+  background-color: rgb(30, 10, 76);
+  box-shadow: 0 4px 6px rgba(139, 139, 139, 0.44);
+  border-bottom: 1px solid black;
+}
+
+.logo {
+  max-height: 50px;
+  max-width: 45px;
+}
+
+.navbar-brand {
+  font-weight: bolder;
+  color: #000000;
+  font-size: 24px;
+  transition: 0.3s color;
+}
+
+.login-button {
+  background: linear-gradient(45deg, #ffd700, #d77431);
+  color: #faffb1;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: 0.3s background-color;
+}
+
+.login-button:hover {
+  background: linear-gradient(45deg, #d77431, #ffd700);
+}
+
+.navbar-toggler {
+  border: none;
+  font-size: 1.25rem;
+  background: linear-gradient(45deg, #ffd700, #d77431);
+  border-radius: 3rem;
+  margin-left: 15px;
+}
+
+.navbar-toggler:hover {
+  background: linear-gradient(45deg, #d77431, #ffd700);
+}
+
+.offcanvas-header {
+  color: #ffffff;
+  background-color: rgb(30, 10, 76);
+}
+
+.offcanvas-body{
+  color: #ffffff;
+  background-color: rgb(30, 10, 76);
+}
+
+.btn-close {
+  color: rgb(255, 255, 255);
+  background-color: rgb(219, 216, 53);
+}
+
+.navbar-toggler:focus,
+.btn-close:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.nav-link {
+  color: white;
+  font-weight: bold;
+  position: relative;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #ffd700;
+}
+
+@media (min-width: 991px) {
+  .nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 2px;
+    background-color: rgb(30, 10, 76);
+    visibility: hidden;
+    transition: 0.1s ease-in-out;
+  }
+
+  .nav-link:hover::before,
+  .nav-link.active::before {
+    width: 100%;
+    visibility: visible;
+  }
+}
+
+.btn {
+  font-size: 20px;
+  /* font-weight: bold; */
+  /* background: linear-gradient(45deg, #2bc4a8, #009970); */
+  border-radius: 2rem;
+  padding: 5px 25px;
+  background: linear-gradient(45deg, rgb(30, 10, 76), rgb(58, 14, 162));
+  color: white;
+}
+
+.btn:hover {
+  background: linear-gradient(45deg, rgb(58, 14, 162), rgb(30, 10, 76));
+}
+
+/* for home page */
+
+.bandhan {
+  font-size: 28px;
+  font-weight: bold;
+  font-style: italic;
+  color: #ffd000;
+}
+
+
+/* hero section */
+.hero {
+  position: relative;
+  color: rgb(30, 10, 76)  ;
+  padding: 100px 0;
+  text-align: center;
+  overflow: hidden;
+  background-image: url(../.././../../../assets/banner1.webp);
+}
+
+.video-background {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: -1;
+}
+
+@media(min-aspect-ratio: 16/9){
+  .video-background{
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media(max-aspect-ratio: 16/9){
+  .video-background{
+    width: auto;
+    height: 100%;
+  }
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+.hero p {
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+.hero .btn {
+  padding: 5px 30px;
+  /* font-size: 1.2rem; */
+}
+
+.hero-box{
+  border-radius: 1rem;
+  background: linear-gradient(45deg, #f88d46, #ffeb78);
+  border: 1px solid black;
+  max-width: 400px; 
+  margin-left: 70px;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+}
+
+.animations{
+  opacity: 0;
+  transform: translateY(30px);
+  animation: moveup 0.5s linear forwards;
+}
+
+@keyframes moveup{
+  100%{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+/* About section */
+
+.about {
+  padding-top: 100px;
+  background-color: rgba(255, 255, 255, 0.401);
+}
+
+h1 {
+  font-family: "Dancing Script", cursive;
+  font-weight: bold;
+  color: rgb(30, 10, 76);
+}
+
+.about-img img {
+  width: 60%;
+  height: 60vh;
+
+  border-radius: 1rem;
+  border: 1px solid black;
+}
+
+.accordian-bg{
+  background-color: #ffffff91;
+  color: rgb(30, 10, 76);
+}
+.services{
+  background-color: rgba(255, 255, 255, 0.482);
+}
+
+.testimonials{
+  background-color: rgba(255, 255, 255, 0.603);
+}
+
+.card{
+  background-color: #ffffff89;
+}
+
+.fa{
+  background-color: rgb(30, 10, 76);
+}
+.card-body img {
+  min-width: 70%;
+  max-height: 40vh;
+}
+
+.card-hover {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card-hover:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.contact{
+  background-color: rgba(255, 255, 255, 0.727);
+}
+
+.contact-form {
+  max-width: 70%;
+  margin: auto;
+}
+
+.form-control{
+  background-color: #ffffffab;
+}
+

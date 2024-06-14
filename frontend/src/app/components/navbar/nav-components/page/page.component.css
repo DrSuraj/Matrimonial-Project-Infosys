@@ -1,0 +1,60 @@
+
+.content {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  border-radius: 0.5rem;
+}
+
+.profile-pic {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.recommendations img {
+  width: 100%;
+  border-radius: 5px;
+}
+.info{
+  background-color: #ffffffab;
+}
+.card{
+  background-color: #ffffffab;
+  /* background-color: rgb(30, 10, 76); */
+  color: rgb(0, 0, 0);
+}
+.card-hover {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card-hover:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn {
+  /* font-weight: bold; */
+  /* background: linear-gradient(45deg, #2bc4a8, #009970); */
+  border-radius: 2rem;
+  padding: 5px 25px;
+  background: linear-gradient(45deg, rgb(30, 10, 76), rgb(58, 14, 162));
+  color: white;
+}
+
+.btn:hover {
+  background: linear-gradient(45deg, rgb(58, 14, 162), rgb(30, 10, 76));
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; /* Change text color as needed */
+  font-size: 24px; /* Adjust font size as needed */
+  font-weight: bold;
+  
+}
+
+a {
+  text-decoration: none;
+}

@@ -1,0 +1,17 @@
+.regd{
+  border: 1px solid black;
+  border-radius: 1rem;
+  padding: 10px;
+  margin-bottom: 40px;
+  background-color: #ffffffab;
+}
+
+
+.regd h3{
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+td{
+  background-color: #ffffffab;
+}

@@ -1,0 +1,26 @@
+<app-navbar></app-navbar>
+<div class="container">
+  <div class="row">
+    <div *ngFor="let user of users" class="col-md-3 col-sm-6 item">
+      <a
+        [routerLink]="['/matches/brides/bride-info', user.id]"
+        (click)="viewDetails(user)"
+      >
+        <div class="card item-card card-block">
+          <img
+            *ngIf="user.personalInfo?.photograph"
+            [src]="'data:image/jpeg;base64,' + user.personalInfo.photograph"
+            alt="Unable to load photo"
+          />
+          <h5 class="card-title mt-3 mb-3">
+            {{ user.firstName }} {{ user.lastName }}
+          </h5>
+          <p class="card-text">
+            {{ user.age }} years,
+            {{ user.educationCareer?.educationField || "Not working" }}
+          </p>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>

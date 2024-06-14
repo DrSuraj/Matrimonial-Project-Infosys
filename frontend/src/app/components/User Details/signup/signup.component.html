@@ -1,0 +1,152 @@
+<app-navbeflogin></app-navbeflogin>
+<div class="container" [formGroup]="userForm">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="signup-form">
+        <h2 class="text-center">Sign Up</h2>
+        <!-- <form> -->
+
+        <form (submit)="onSubmit($event)" class="needs-validation">
+
+          <!-- Username -->
+          <div class="mb-3">
+            <label for="name" class="form-label"
+              ><i class="fa-solid fa-user"></i> Enter Username</label
+            >
+            <input
+              formControlName="userName"
+              name="userName"
+              type="text"
+              class="form-control"
+              id="userName"
+              placeholder="Username"
+              required
+            />
+            <!-- For username validation -->
+            <div
+              class="text-danger"
+              *ngIf="
+                userForm.controls['userName'].invalid &&
+                (userForm.controls['userName'].touched ||
+                  userForm.controls['userName'].dirty)
+              "
+            >
+              <span *ngIf="userForm.controls['userName'].errors?.['required']"
+                >This is Required</span
+              >
+              <span *ngIf="userForm.controls['userName'].errors?.['minlength']"
+                >Minmum 3 characters Required</span
+              >
+            </div>
+          </div>
+
+          <!-- for Email -->
+          <div class="mb-3">
+            <label for="email" class="form-label"
+              ><i class="fas fa-envelope"></i> Enter your email</label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="abc@gmail.com"
+              required
+              formControlName="email"
+              name="email"
+              />
+            <!-- for email validation -->
+            <div
+              class="text-danger"
+              *ngIf="
+                userForm.controls['email'].invalid &&
+                (userForm.controls['email'].touched ||
+                  userForm.controls['email'].dirty)
+              "
+            >
+              <span *ngIf="userForm.controls['email'].errors?.['required']"
+                >Required</span
+              >
+              <span *ngIf="userForm.controls['email'].errors?.['email']"
+                >Enter a proper Email</span
+              >
+            </div>
+          </div>
+
+          <!-- for password -->
+          <div class="mb-3">
+            <label for="password" class="form-label"
+              ><i class="fas fa-lock"></i> Create your Password</label
+            >
+            <input
+              type="password"
+              class="form-control"
+              id="password"
+              placeholder="Your Password"
+              required
+              formControlName="password"
+            />
+            <!-- for password validation -->
+            <div
+              class="text-danger mt-1"
+              *ngIf="
+                userForm.controls['password'].invalid &&
+                (userForm.controls['password'].touched ||
+                  userForm.controls['password'].dirty)
+              "
+            >
+              <span *ngIf="userForm.controls['password'].errors?.['required']"
+                >Required</span
+              >
+              <span *ngIf="userForm.controls['password'].errors?.['pattern']">Password must be at least 8 characters long <br>It contain letters, numbers, and special characters</span>
+            </div>
+          </div>
+
+          <!-- <div class="mb-3">
+            <label for="mobile" class="form-label">Enter your mobile no</label>
+            <input
+              type="tel"
+              class="form-control"
+              id="mobile"
+              placeholder="Mobile Number"
+              required
+              formControlName="mobileNumber"
+            />
+            <div
+              class="text-danger"
+              *ngIf="
+                userForm.controls['mobileNumber'].invalid &&
+                (userForm.controls['mobileNumber'].touched ||
+                  userForm.controls['mobileNumber'].dirty)
+              "
+            >
+              <span
+                *ngIf="userForm.controls['mobileNumber'].errors?.['required']"
+                >Required</span
+              >
+              <span
+                *ngIf="userForm.controls['mobileNumber'].errors?.['pattern']"
+                >Please Enter in 10 Digits</span
+              >
+            </div>
+          </div> -->
+               
+          <button type="submit" class="btn btn-success btn-block">
+            Continue to Sign Up
+          </button>
+          
+          <div class="mt-3 text-center">
+            <p>
+              Already have an Account?
+              <a
+                routerLink="/login"
+                routerLinkActive="active"
+                style="text-decoration: none"
+                >Login</a
+              >
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

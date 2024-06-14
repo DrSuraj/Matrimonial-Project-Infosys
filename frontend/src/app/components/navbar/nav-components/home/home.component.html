@@ -1,0 +1,465 @@
+<!-- Nav section -->
+<section>
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand me-auto">
+        <img src="../../../../../assets/logo2.png" alt="" class="logo" />
+        <span class="bandhan ms-2"> Bandhan</span>
+      </a>
+      <div
+        class="offcanvas offcanvas-end"
+        tabindex="-1"
+        id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel"
+      >
+        <div class="offcanvas-header">
+          <h5
+            class="offcanvas-title"
+            id="offcanvasNavbarLabel"
+            style="font-weight: bold; color: black"
+          >
+            <span class="bandhan">Bandhan</span>
+          </h5>
+          <button
+            type="button"
+            class="btn-close text-light"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" aria-current="page" href="#hero"
+                >Home</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <a
+        href="#"
+        class="login-button"
+        routerLink="/login"
+        routerLinkActive="active"
+        >Login</a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+</section>
+
+<!-- Hero section -->
+<section id="hero" class="hero text-center">
+  <!-- <video autoplay muted loop plays-inline id="heroVideo" class="video-background">
+    <source src="../../../../../assets/background-vedio1.mp4" type="video/mp4">
+  </video> -->
+
+  <div class="container">
+    <!-- <h1 class="animations text-start text-light">Find Your Perfect Match !!</h1>
+    <p class="animations text-start text-light">
+      We're dedicated to helping you discover meaningful connections.<br>Start your
+      journey towards finding the one meant for you.
+    </p> -->
+    <div class="row mt-4">
+      <div class="col-md-6 mt-4 animations">
+        <h1 class="animations text-light">Find Your Perfect Match !</h1>
+        <p class="animations text-light">
+          We're dedicated to helping you discover meaningful connections.<br />Start
+          your journey towards finding the one meant for you.
+        </p>
+        <div class="p-5 ">
+          <a routerLink="/signup" class="login-button btn btn-warning me-3">Sign Up</a>
+          <a routerLink="/login" class="login-button btn btn-warning">Sign in</a>
+        </div>
+      </div>
+      <div class="col-md-6 mt-4 animations">
+        <!-- <div class="p-4 hero-box">
+          <p>
+            Ready to find your soulmate? Simply click on the 'Login' button to
+            access your account and begin your journey towards discovering
+            meaningful connections
+          </p>
+          <a routerLink="/login" class="btn btn-primary">Sign in</a>
+        </div> -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About Us -->
+
+<section class="about pb-5" id="about">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h1 data-aos="fade-up">About Us</h1>
+      <hr class="w-25 m-auto" />
+    </div>
+    <div class="row">
+      <div
+        class="col-sm-12 col-md-6 col-lg-6 col-12 mt-4"
+        data-aos="fade-right"
+        data-aos-offset="200"
+      >
+        <h1>What do you want to know</h1>
+        <p class="p-2">
+          Online Marriage Jeevansathi.com is a trusted platform for finding your
+          life partner. We prioritize security, privacy, and personalized
+          matchmaking to simplify your search. Join us for a reliable and
+          enjoyable matchmaking experience..
+        </p>
+
+        <button type="button" class="btn btn-light mb-5">Know More</button>
+
+        <div class="accordion" id="accordionExample" data-aos="fade-right">
+          <div class="accordion-item accordian-bg">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button accordian-bg"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                Our Story
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                "Founded with love and commitment, we aim to connect hearts and
+                create lasting bonds. Join us on this journey of love and
+                companionship."
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item accordian-bg">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed accordian-bg"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                Our Mission
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                "Dedicated to facilitating meaningful connections, we strive to
+                empower individuals to find their perfect match and build
+                fulfilling relationships."
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item accordian-bg">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed accordian-bg"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                Our Vision
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                "We envision a world where every soul finds its mate. Through
+                innovation and compassion, we're redefining the path to happily
+                ever after."
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-sm-12 col-md-6 col-lg-6 col-12 m-auto text-center about-img mt-4"
+        data-aos="fade-down-left"
+      >
+        <img
+          src="../../../../../assets/couple6.jpg"
+          alt=""
+          class="card-hover"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- services section -->
+<section class="services py-5" id="services">
+  <div class="container">
+    <div class="text-center my-5">
+      <h1 data-aos="fade-up">Our Services</h1>
+      <hr class="w-25 m-auto" />
+    </div>
+    <div class="row" data-aos="zoom-in-up" data-aos-offset="200">
+      <div class="col-sm-12 col-md-4 col-lg-4 col-12 mt-4">
+        <div class="card card-hover">
+          <div class="card-body">
+            <i class="fa fa-handshake p-2 mb-2 text-white rounded"></i>
+            <h5 class="card-title my-3">Personalized Matchmaking</h5>
+            <p class="card-text">
+              "Utilize our advanced algorithms to find compatible partners based
+              on your preferences, ensuring a personalized matchmaking
+              experience that leads to meaningful relationships."
+            </p>
+            <a href="#" class="btn text-light">More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-4 col-lg-4 col-12 mt-4">
+        <div class="card card-hover">
+          <div class="card-body">
+            <i class="fa fa-shield-alt p-2 mb-2 text-white rounded"></i>
+            <h5 class="card-title my-3">Verified Profiles</h5>
+            <p class="card-text">
+              "Every profile undergoes thorough verification, ensuring
+              authenticity and safety. Connect with genuine individuals for a
+              trustworthy and secure matchmaking experience."
+            </p>
+            <a href="#" class="btn text-light">More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-4 col-lg-4 col-12 mt-4">
+        <div class="card card-hover">
+          <div class="card-body">
+            <i class="fa fa-lock p-2 mb-2 text-white rounded"></i>
+            <h5 class="card-title my-3">Privacy and Security</h5>
+            <p class="card-text">
+              "We prioritize your privacy and security with robust measures and
+              customizable settings, protecting your personal information and
+              ensuring a safe environment."
+            </p>
+            <a href="#" class="btn text-light">More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-2" data-aos="zoom-in-down" data-aos-offset="200">
+      <div class="col-sm-12 col-md-4 col-lg-4 col-12 mt-4">
+        <div class="card card-hover">
+          <div class="card-body">
+            <i class="fa fa-id-card p-2 mb-2 text-white rounded"></i>
+            <h5 class="card-title my-3">In-Depth Profiles</h5>
+            <p class="card-text">
+              "Detailed profiles include interests, lifestyle, and background,
+              helping you make informed decisions and get to know potential
+              matches better."
+            </p>
+            <a href="#" class="btn text-light">More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-4 col-lg-4 col-12 mt-4">
+        <div class="card card-hover">
+          <div class="card-body">
+            <i class="fa fa-headset p-2 mb-2 text-light rounded"></i>
+            <h5 class="card-title my-3">Dedicated Customer Support</h5>
+            <p class="card-text">
+              "Our 24/7 customer support team is always ready to assist with any
+              questions or issues, ensuring a smooth and satisfying experience."
+            </p>
+            <a href="#" class="btn text-light">More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-4 col-lg-4 col-12 mt-4">
+        <div class="card card-hover">
+          <div class="card-body">
+            <i class="fa fa-trophy p-2 mb-2 text-white rounded"></i>
+            <h5 class="card-title my-3">Success Stories and Tips</h5>
+            <p class="card-text">
+              "Read inspiring success stories and expert relationship tips to
+              guide you on your journey to finding the perfect match."
+            </p>
+            <a href="#" class="btn text-light">More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="testimonials py-5 text-center" id="testimonials">
+  <div class="container">
+    <div class="text-center my-5">
+      <h1 data-aos="fade-up">Testimonials</h1>
+      <hr class="w-25 m-auto" />
+    </div>
+    <div class="row">
+      <div
+        class="col-sm-12 col-md-4 col-lg-4 col-12 mt-4"
+        data-aos="fade-right"
+      >
+        <div class="card card-hover">
+          <div class="card-body">
+            <img
+              src="../../../../../assets/couple4.jpg"
+              alt=""
+              class="img-fluid rounded-circle border-black"
+            />
+            <h5 class="card-title py-3">Abhaya & Sonali</h5>
+            <p class="card-text">
+              "Thanks to Jeevan Sathi, we found each other within months. Our
+              shared love for technology and creativity brought us closer, and
+              now we're happily married!"
+            </p>
+            <button type="button" class="btn btn-light text-light">
+              Know More
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-sm-12 col-md-4 col-lg-4 col-12 mt-4"
+        data-aos="zoom-in-down"
+      >
+        <div class="card card-hover">
+          <div class="card-body">
+            <img
+              src="../../../../../assets/couple6.jpg"
+              alt=""
+              class="img-fluid rounded-circle border-black"
+            />
+            <h5 class="card-title py-3">Tushar & Pragyan</h5>
+            <p class="card-text">
+              "We connected on Jeevan Sathi over our love for food and travel.
+              After months of getting to know each other, we tied the knot and
+              are enjoying life’s adventures together."
+            </p>
+            <button type="button" class="btn btn-light text-light">
+              Know More
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-4 col-lg-4 col-12 mt-4" data-aos="fade-left">
+        <div class="card card-hover">
+          <div class="card-body">
+            <img
+              src="../../../../../assets/coupl3.jpg"
+              alt=""
+              class="img-fluid rounded-circle border-black"
+            />
+            <h5 class="card-title py-3">Aman & Sitara</h5>
+            <p class="card-text">
+              "On Jeevan Sathi, we discovered our mutual dedication to helping
+              others. From first contact to marriage, our journey was seamless,
+              and we couldn't be happier!"
+            </p>
+
+            <button type="button" class="btn btn-light text-light">
+              Know More
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- contact section -->
+
+<section class="contact py-5" id="contact">
+  <div class="container mb-5">
+    <div class="text-center my-5">
+      <h1>Contact Us</h1>
+      <hr class="w-25 m-auto" />
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-6 col-lg-6 col-12 mt-4">
+        <div class="contact-form">
+          <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+            <div class="mb-3">
+              <label for="name" class="form-label"
+                ><strong>Your Name</strong></label
+              >
+              <input
+                type="text"
+                class="form-control"
+                formControlName="name"
+                placeholder="Enter your name"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label"
+                ><strong>Email Address</strong></label
+              >
+              <input
+                type="email"
+                class="form-control"
+                formControlName="email"
+                placeholder="Enter Your Email address"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label"
+                ><strong>Your Message</strong></label
+              >
+              <textarea
+                class="form-control"
+                formControlName="message"
+                rows="4"
+                required
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="btn btn-success"
+              [disabled]="contactForm.invalid"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+      <div
+        class="col-sm-12 col-md-6 col-lg-6 col-12 m-auto text-center about-img mt-4"
+      >
+        <img src="assets/curated-matches.jpeg" alt="" class="card-hover" />
+      </div>
+    </div>
+  </div>
+</section>

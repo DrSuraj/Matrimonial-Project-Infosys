@@ -1,0 +1,20 @@
+<div class="regd">
+  <h3>Registration list</h3>
+  <hr />
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>R_Id</th>
+        <th>Name</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let regd of regdData">
+        <td>{{regd.rid}}</td>
+        <td>{{regd.userName}}</td>
+        <td>{{regd.email}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

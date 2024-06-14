@@ -1,0 +1,31 @@
+<div class="user">
+  <h3>Users Management</h3>
+  <hr />
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>R_Id</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td>{{ user.id }}</td>
+        <td>{{ user.firstName }} {{ user.lastName }}</td>
+        <td>{{ user.email }}</td>
+
+        <td>
+          <button class="btn  btn-info me-3" 
+          (click)="viewDetails(user)">
+            Info
+          </button>
+          <button class="btn btn-danger" (click)="deleteUser($event, user.id)">
+            <i class="fas fa-trash"></i>
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

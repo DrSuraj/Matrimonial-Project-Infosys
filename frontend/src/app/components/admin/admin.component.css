@@ -1,0 +1,155 @@
+/* for Admin navbar */
+
+.navbar {
+  background-color: rgb(30, 10, 76);
+  box-shadow: 0 4px 6px rgba(139, 139, 139, 0.44);
+  border-bottom: 1px solid black;
+  /* backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  */
+  padding: 5px;
+}
+
+.logo{
+  max-height: 50px;
+  max-width: 45px;
+}
+
+.bandhan {
+  font-size: 28px;
+  font-weight: bold;
+  font-style: italic;
+  color: #ffd000;
+}
+
+.navbar-brand {
+  font-weight: bolder;
+  color: #000000;
+  font-size: 24px;
+  transition: 0.3s color;
+}
+
+.login-button {
+  background: linear-gradient(45deg, #ffd700, #d77431);
+  color: #faffb1;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: 0.3s background-color;
+  
+}
+.profile {
+  text-decoration: none;
+  color: white;
+}
+
+.login-button:hover {
+  background: linear-gradient(45deg, #d77431, #ffd700);
+}
+
+.offcanvas-body h3 {
+ font-weight: bold;
+}
+
+.nav-link {
+  color: white;
+  font-weight: bold;
+  position: relative;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  min-width: 10rem;
+  padding: 0.5rem 0;
+  margin: 0;
+  list-style: none;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+/* Show dropdown menu when parent is hovered or focused */
+.dropdown:hover .dropdown-menu,
+.dropdown:focus .dropdown-menu {
+  display: block;
+}
+
+/* Dropdown Items */
+.dropdown-item {
+  display: block;
+  padding: 0.5rem 1rem;
+  clear: both;
+  font-weight: normal;
+  color: #333;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+/* Hover effect for dropdown items */
+.dropdown-item:hover,
+.dropdown-item:focus {
+  color: #fff;
+  background-color: rgb(30, 10, 76);
+}
+
+/* Active state for dropdown items */
+.dropdown-item.active,
+.dropdown-item:active {
+  color: #fff;
+  background-color: rgb(30, 10, 76);
+}
+
+/* Divider Line */
+.dropdown-divider {
+  height: 0;
+  margin: 0.5rem 0;
+  overflow: hidden;
+  border-top: 1px solid #e9ecef;
+}
+
+.logout{
+  cursor: pointer;
+}
+
+
+/* for admin container */
+
+.admin-container {
+  margin-top: 100px;
+  margin-left: 25px;
+}
+.admin-sidebar {
+  color: rgb(0, 0, 0);
+  background: linear-gradient(45deg, #fcec94, #ffb380);
+  border-right: 1px solid #dee2e6;
+  min-height: 80vh;
+  width: 230px;
+  border-radius: 1rem;
+  margin-left: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #000000;
+}
+.admin-main {
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+.list-group {
+  width: 180px;
+}
+.btn {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+content {
+  background-color: aliceblue;
+}

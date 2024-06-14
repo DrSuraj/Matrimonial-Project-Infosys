@@ -1,0 +1,23 @@
+.contact{
+  border: 1px solid black;
+  border-radius: 1rem;
+  padding: 10px;
+  margin-bottom: 40px;
+  background-color: #ffffffab;
+}
+
+.contact h3{
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+td{
+  background-color: #ffffffab;
+}
+/* tr:nth-child(even) {
+  background-color: #f2f2f2ab; 
+}
+
+tr:nth-child(odd) {
+  background-color: #ffffffab; 
+} */
